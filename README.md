@@ -23,13 +23,13 @@ This is a **console-based banking application** built using **Java, JDBC, and My
 ## 📂 Project Structure
 Banking-System/
 │── src/
-│   ├── BankingApp.java        # Main application (Handles user interface and flow)
-│   ├── User.java              # Manages user authentication (Register/Login)
-│   ├── Accounts.java          # Handles bank account creation and retrieval
-│   ├── AccountManager.java    # Handles transactions (Deposit, Withdraw, Transfer, Balance Check)
-│── .gitignore                 # Ignore unnecessary files (e.g., compiled files, IDE settings)
-│── README.md                  # Documentation (Project overview, setup guide, usage)
-│── banking_system.sql         # SQL script to create necessary database tables
+│   ├── BankingApp.java
+│   ├── User.java 
+│   ├── Accounts.java
+│   ├── AccountManager.java
+│── .gitignore               
+│── README.md
+│── banking_system.sql
 
 
 ## 🎮 How to Run the Project
@@ -68,38 +68,6 @@ CREATE TABLE Accounts (
     balance DECIMAL(10,2) DEFAULT 0.00,
     security_pin VARCHAR(10) NOT NULL
 );
-📜 Usage Guide
-🏦 1️⃣ Register a New User
-Enter Full Name, Email, Password.
-If the email is already registered, it will show:
-kotlin
-Copy
-Edit
-User Already Exists for this Email Address!!
-🔑 2️⃣ Log In
-Enter Email & Password.
-If successful, it will check if you have an account:
-pgsql
-Copy
-Edit
-User Logged In!
-If you don’t have an account, it will prompt you to create one.
-💵 3️⃣ Open a Bank Account
-Enter Full Name, Initial Deposit, Security Pin.
-If successful:
-csharp
-Copy
-Edit
-Account Created Successfully!
-Your Account Number is: XXXXXXX
-🔄 4️⃣ Perform Banking Transactions
-Option	Action
-1	Debit Money
-2	Credit Money
-3	Transfer Money
-4	Check Balance
-5	Log Out
-💡 Invalid PINs, Insufficient Balance, or Incorrect Inputs are handled with proper error messages.
 
 🛡️ Security Considerations
 🔹 Uses Prepared Statements to prevent SQL Injection.
@@ -107,6 +75,5 @@ Option	Action
 🔹 Auto-commit disabled to ensure transactions are fully completed before committing.
 
 🔔 Future Enhancements:
-
-Password Hashing (BCrypt) for secure storage.
-GUI Interface using JavaFX or Spring Boot.
+1   Password Hashing (BCrypt) for secure storage.
+2   GUI Interface using JavaFX or Spring Boot.
