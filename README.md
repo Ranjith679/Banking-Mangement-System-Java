@@ -21,7 +21,15 @@ This is a **console-based banking application** built using **Java, JDBC, and My
 ---
 
 ## 📂 Project Structure
-Banking-System/ │── src/ │ ├── BankingApp.java # Main application │ ├── User.java # Handles user authentication │ ├── Accounts.java # Manages bank accounts │ ├── AccountManager.java # Handles banking transactions │── .gitignore # Git ignore file │── README.md # Project documentation │── banking_system.sql # Database schema
+Banking-System/
+│── src/
+│   ├── BankingApp.java        # Main application (Handles user interface and flow)
+│   ├── User.java              # Manages user authentication (Register/Login)
+│   ├── Accounts.java          # Handles bank account creation and retrieval
+│   ├── AccountManager.java    # Handles transactions (Deposit, Withdraw, Transfer, Balance Check)
+│── .gitignore                 # Ignore unnecessary files (e.g., compiled files, IDE settings)
+│── README.md                  # Documentation (Project overview, setup guide, usage)
+│── banking_system.sql         # SQL script to create necessary database tables
 
 
 ---
