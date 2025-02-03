@@ -32,8 +32,6 @@ Banking-System/
 │── banking_system.sql         # SQL script to create necessary database tables
 
 
----
-
 ## 🎮 How to Run the Project
 
 ### ⚡ 1️⃣ **Clone the Repository**
